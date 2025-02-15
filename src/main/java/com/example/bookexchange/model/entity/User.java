@@ -22,6 +22,9 @@ public class User {
     private Long id;
 
     @Column(nullable = false, unique = true)
+    private String keycloakId;
+
+    @Column(nullable = false, unique = true)
     private String username;
 
     @Column(nullable = false)
@@ -37,7 +40,7 @@ public class User {
     private String city;
 
     @Column(nullable = false)
-    private String pictureUrl;
+    private String profilePicture;
 
     @Column(columnDefinition = "TEXT")
     private String description;
